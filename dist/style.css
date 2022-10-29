@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-clr);
+  color: var(--text-clr);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+:root {
+  --background-clr: hsl(217, 54%, 11%);
+  --card-background-clr: hsl(216, 50%, 16%);
+  --card-line-clr: hsl(215, 32%, 27%);
+  --text-clr: hsl(0, 0%, 100%);
+  --alt-text-clr: hsl(215, 51%, 70%);
+  --link-clr: hsl(178, 100%, 50%);
+  --hover-clr: hsl(178, 100%, 50%);
+  --hover-background-clr: hsla(178, 100%, 50%, 0.507);
+}
+
+.container {
+  background-color: var(--card-background-clr);
+  margin-inline: auto;
+  padding: 2rem;
+  width: min(100%, 370px);
+  border-radius: 1em;
+  height: 570px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.top .equilibrium {
+  height: 300px;
+  width: 100%;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.top .equilibrium:hover + .view {
+  display: block;
+}
+.top .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: var(--hover-background-clr);
+  padding: 42% 42% 41%;
+  border-radius: 1em;
+  transition: 0.3s ease;
+}
+
+.bottom .head {
+  color: var(--text-clr);
+  text-decoration: none;
+}
+.bottom .head:hover {
+  color: var(--hover-clr);
+}
+.bottom p {
+  color: var(--alt-text-clr);
+}
+.bottom .bottom-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--card-line-clr);
+}
+.bottom .bottom-bottom .price,
+.bottom .bottom-bottom .duration {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.bottom .bottom-bottom .price img,
+.bottom .bottom-bottom .duration img {
+  margin-right: 0.5rem;
+}
+.bottom .bottom-bottom .price span {
+  color: var(--hover-clr);
+}
+.bottom .bottom-bottom .duration {
+  color: var(--alt-text-clr);
+}
+.bottom .creator {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.bottom .creator img {
+  width: 35px;
+  border: 1px white solid;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.bottom .creator span {
+  color: var(--alt-text-clr);
+}
+.bottom .creator a {
+  color: var(--text-clr);
+  text-decoration: none;
+  margin-left: 0.2rem;
+}
+.bottom .creator a:hover {
+  color: var(--hover-clr);
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--link-clr);
+}/*# sourceMappingURL=style.css.map */
