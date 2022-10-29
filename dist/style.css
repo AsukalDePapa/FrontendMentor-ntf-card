@@ -51,10 +51,10 @@ p {
 .container {
   background-color: var(--card-background-clr);
   margin-inline: auto;
-  padding: 2rem;
+  padding: 1.5rem;
   width: min(100%, 370px);
   border-radius: 1em;
-  height: 570px;
+  height: 580px;
   position: relative;
   margin-bottom: 1rem;
 }
