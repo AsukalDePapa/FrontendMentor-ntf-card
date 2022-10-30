@@ -90,12 +90,14 @@ p {
 .bottom .head {
   color: var(--text-clr);
   text-decoration: none;
+  font-weight: 900;
 }
 .bottom .head:hover {
   color: var(--hover-clr);
 }
 .bottom p {
   color: var(--alt-text-clr);
+  font-weight: 300;
 }
 .bottom .bottom-bottom {
   display: flex;
@@ -107,6 +109,7 @@ p {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .bottom .bottom-bottom .price img,
 .bottom .bottom-bottom .duration img {
